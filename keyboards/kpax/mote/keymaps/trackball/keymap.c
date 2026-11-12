@@ -152,7 +152,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭───────────────────────────────────────────────────╮            ╭───────────────────────────────────────────────────╮
       QK_RBT,  XXXX,  XXXX,   XXXX,   XXXX,   XXXX,                     DB_TOGG, MU_TOGG, CK_UP, CK_DOWN, CK_TOGG, AU_TOGG,
   // ├───────────────────────────────────────────────────┤            ├───────────────────────────────────────────────────┤
-      RGB_TOG,  RGB_MOD, RGB_RMOD,   RGB_VAI,  RGB_VAD, XXXX,           XXXX, HF_ON,  HF_OFF,   HF_RST, HF_FDBK,  HF_TOGG,
+      UG_TOGG,  UG_NEXT, UG_PREV,   UG_VALU,  UG_VALD, XXXX,           XXXX, HF_ON,  HF_OFF,   HF_RST, HF_FDBK,  HF_TOGG,
   // ├───────────────────────────────────────────────────┤            ├───────────────────────────────────────────────────┤
       BL_TOGG,  BL_UP,  BL_DOWN,   XXXX,   XXXX,   XXXX,                HF_NEXT,  HF_PREV,  HF_CONT, HF_CONU, HF_COND, HF_BUZZ,
   // ├───────────────────────────────────────────────────┤            ├───────────────────────────────────────────────────┤

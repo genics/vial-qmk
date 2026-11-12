@@ -35,17 +35,17 @@ bool fp_process_record_haptic(uint16_t keycode, keyrecord_t *record) {
         // In the case of the mouse buttons and ctrl-x,c,v,s features below, they are treated independently, so they aren't effected by FP_DISABLE_CUSTOM_KEYCODES
 #       endif // FP_DISABLE_CUSTOM_KEYCODES
 #       ifdef FP_HAPTIC_MOUSE_BUTTONS
-        case KC_BTN1:
+        case MS_BTN1:
             if (record->event.pressed) {
                 DRV_pulse(medium_click1);
             }
             break;
-        case KC_BTN2:
+        case MS_BTN2:
             if (record->event.pressed) {
                 DRV_pulse(sh_dblclick_str);
             }
             break;
-        case KC_BTN3:
+        case MS_BTN3:
             if (record->event.pressed) {
                 DRV_pulse(medium_click1);
             }

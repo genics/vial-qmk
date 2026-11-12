@@ -161,11 +161,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        QK_BOOT, EE_CLR, _______, _______,  _______, _______,    RGB_M_P, _______, _______, _______, EE_CLR, QK_BOOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_SPI, HF_PREV, HF_CONU, _______, _______, _______,    RGB_M_B,   _______,   _______,   _______, KC_RBRC, _______,
+       UG_SPDU, HF_PREV, HF_CONU, _______, _______, _______,    RGB_M_B,   _______,   _______,   _______, KC_RBRC, _______,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_TOG, HF_TOGG, _______, CK_TOGG, AU_TOGG, _______,    RGB_M_R,   _______,   _______,   _______, KC_PMNS, KC_PEQL,
+       UG_TOGG, HF_TOGG, _______, CK_TOGG, AU_TOGG, _______,    RGB_M_R,   _______,   _______,   _______, KC_PMNS, KC_PEQL,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_SPD, HF_NEXT, HF_COND, _______, _______, _______,    RGB_M_SW,   _______,   _______,   _______, KC_PSLS, KC_PDOT,
+       UG_SPDD, HF_NEXT, HF_COND, _______, _______, _______,    RGB_M_SW,   _______,   _______,   _______, KC_PSLS, KC_PDOT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                          _______, _______, _______, _______,     _______,   _______, _______, _______,
   //                    ╰───────────────────────────────────╯ ╰───────────────────────────────────╯
@@ -185,7 +185,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [_NUMBER] = { ENCODER_CCW_CW(KC_LEFT, KC_RGHT), ENCODER_CCW_CW(KC_MPRV, KC_MNXT) },
     [_SYMBOL] = { ENCODER_CCW_CW(HF_PREV, HF_NEXT), ENCODER_CCW_CW(KC_MPRV, KC_MNXT) },
     [_FUNC]   = { ENCODER_CCW_CW(CK_UP, CK_DOWN), ENCODER_CCW_CW(KC_MPRV, KC_MNXT) },
-    [_SYS]    = { ENCODER_CCW_CW(RGB_MOD, RGB_RMOD), ENCODER_CCW_CW(RGB_VAI, RGB_VAD) },
+    [_SYS]    = { ENCODER_CCW_CW(UG_NEXT, UG_PREV), ENCODER_CCW_CW(UG_VALU, UG_VALD) },
     // clang-format on
 };
 #endif
