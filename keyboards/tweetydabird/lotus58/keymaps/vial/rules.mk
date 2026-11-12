@@ -7,7 +7,7 @@ VIAL_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
 # Reduce size on atmega32u4
-ifeq ($(strip $(MCU)), atmega32u4)
+ifeq ($(strip $(CONVERT_TO)), )
     TAP_DANCE_ENABLE = no
     QMK_SETTINGS = no
     KEY_OVERRIDE_ENABLE = no
@@ -19,3 +19,7 @@ ifeq ($(strip $(MCU)), atmega32u4)
         MOUSEKEY_ENABLE = no
     endif
 endif
+
+CAPS_WORD_ENABLE = no
+LAYER_LOCK_ENABLE = no
+REPEAT_KEY_ENABLE = no

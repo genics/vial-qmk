@@ -5,7 +5,7 @@ VIA_ENABLE = yes
 VIAL_ENABLE = yes
 
 # Saving space on atmega32u4
-ifeq ($(strip $(MCU)), atmega32u4)
+ifeq ($(strip $(CONVERT_TO)), )
     OLED_ENABLE = no
     MOUSEKEY_ENABLE = no
     COMBO_ENABLE = no
@@ -17,3 +17,5 @@ endif
 # CONVERT_TO = liatris
 # promicro
 # BOOTLOADER = caterina
+
+QMK_SETTINGS = no
